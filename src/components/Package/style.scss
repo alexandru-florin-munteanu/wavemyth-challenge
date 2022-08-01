@@ -1,0 +1,22 @@
+.package {
+  padding: 48px 0;
+  width: 100%;
+  max-width: 1100px;
+
+  &__info {
+    width: 60%;
+    margin: 24px 0;
+  }
+
+  &__name {
+    font-size: 32px;
+    width: 65%;
+    padding: 0 0 18px 0;
+    margin: 24px 0;
+    border-bottom: 1px solid #a9b5cc;
+  }
+
+  &__details {
+    margin-bottom: 24px;
+  }
+}

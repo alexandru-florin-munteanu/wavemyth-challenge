@@ -1,0 +1,14 @@
+.footer {
+  height: 200px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 1.8rem;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #181d26;
+  padding: 0 28px;
+
+  & .disclaimer {
+    width: 30%;
+  }
+}

@@ -1,0 +1,37 @@
+.steps {
+  padding: 32px 0;
+  height: 100%;
+  width: 100%;
+  max-height: 160px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-around;
+
+  .step {
+    transition: all 0.2s ease-in;
+
+    &--last {
+      background-color: #2d333d;
+      border: 1px solid #181d26;
+      border-radius: 8px;
+      padding: 16px 64px;
+      box-shadow: 0 1.7rem 4.2rem rgba(0, 0, 0, 0.12);
+    }
+    &:hover {
+      transform: translateY(-1.1px);
+    }
+
+    &__message {
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      &__highlight {
+        display: block;
+        font-size: 56px;
+        font-weight: 700;
+        letter-spacing: -0.15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.carousel {
+  width: 1300px;
+  position: relative;
+  padding: 42px 0;
+
+  &__inner {
+    width: 100%;
+    white-space: nowrap;
+    transition: all 0.3s ease-in;
+  }
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    height: 410px;
+    border-radius: 8px;
+    background-color: #2d333d;
+
+    &__image {
+      height: 100%;
+      width: 65%;
+      background-image: url("../../images/planet-1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 8px 0 0 8px;
+    }
+
+    &__details {
+      padding: 54px;
+    }
+
+    &__planet {
+      font-size: 20px;
+      letter-spacing: 3.125px;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    &__info {
+      height: 100%;
+      padding: 24px 18px;
+    }
+
+    &__text {
+      white-space: pre-wrap;
+      &__heading {
+        font-size: 30px;
+        letter-spacing: -0.4px;
+        margin-bottom: 16px;
+      }
+
+      &__block {
+        font-size: 16px;
+        max-width: 200px;
+        line-height: 1.25;
+        margin: 16px 0px;
+      }
+    }
+
+    &__cta {
+      background-color: #181d26;
+      width: 350px;
+      min-height: 100px;
+      gap: 16px;
+      margin: 0 auto;
+      padding: 0 12px;
+      border: 1px solid #272b35;
+      border-radius: 8px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.195);
+
+      &__price-tag {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2.125px;
+      }
+    }
+  }
+
+  &__component {
+    overflow-x: hidden;
+    margin: 96px 24px;
+    height: 410px;
+    width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0 1.7rem 4.2rem rgba(0, 0, 0, 0.18);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #272b35;
+    border: 1px solid #181d26;
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.28);
+      transform: translateY(-50%) scale(1.15);
+    }
+
+    &:active {
+      background-color: #1d2027;
+    }
+
+    &--left {
+      left: 2%;
+      transform: translateY(-50%) rotate(180deg);
+
+      &:hover {
+        transform: translateY(-50%) scale(1.1) rotate(180deg);
+      }
+    }
+
+    &--right {
+      right: 2%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.main-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: #fff;
+  letter-spacing: 1.35px;
+  border: 1px solid #181d26;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #46c351;
+  box-shadow: 0 1.2rem 3.5rem rgba(0, 0, 0, 0.13);
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1.65px);
+    box-shadow: 0 1.4rem 3.9rem rgba(0, 0, 0, 0.13);
+  }
+
+  &:active {
+    transform: translateY(0) scale(1);
+    background-color: #256b2b;
+    box-shadow: 0 1.15rem 3rem rgba(0, 0, 0, 0.13);
+  }
+}
